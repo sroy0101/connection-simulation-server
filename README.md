@@ -13,9 +13,9 @@ The following rules apply:
 7) If the callback to the consumer was unsuccessful, the agent will retry. 
 
 ### API
-Currently supports one api, api/getSimulationResults?consumers=<number of consumers>&agents=<number of agents>. For example, api/getSimulationResults?consumers=100&agents=10.
+Currently supports one api, api/getSimulationResults?consumers=[number of consumers]&agents=[number of agents]. For example, api/getSimulationResults?consumers=100&agents=10.
 
-Current limitation - maximum run time is set to 1 minute. This restriction will be removed after simulation progress monitoring api is implemented. 
+#### Current Limitation - maximum run time is set to 1 minute. This restriction will be removed after simulation progress monitoring api is implemented. 
 
 ### How to Use
 1. Clone this application to your local folder. 
@@ -24,12 +24,9 @@ Current limitation - maximum run time is set to 1 minute. This restriction will 
 3. Run the app: 
 > npm run start 
 
-The Run command will display the following on the terminal: 
-
-![run.png](https://raw.githubusercontent.com/sroy0101/connection-simulation/master/images/run.PNG)
-
 #### Note
 The run will end when all the consumers are connected, even if the end of run time is not reached.
+It may also end when the maximum simulation time is reached. 
 Also, the run will end at the end of run time even if there are consumers not connected. 
 
 ### Tests 
