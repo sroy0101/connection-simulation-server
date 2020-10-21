@@ -1,6 +1,6 @@
 # Connection-Simulation-Server
 
-A nodejs/express server application to simulate the connections of thousands of consumers trying to connect to a pool of agents and collect various  metrics about the process. The generated data is stored in CSV files. 
+A nodejs/express server application to simulate the connections of thousands of consumers trying to connect to a pool of agents and collect various  metrics about the process. 
 
 ### Rules 
 The following rules apply:
